@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-# Changes
+#Changes by AJay and shruthi
 
 import os
 
@@ -26,7 +26,8 @@ SECRET_KEY = 'b#33wlf=(1(@xk2$=-r#l0&#vt(ngc-2gh9+qy2hxqjsy^yfjy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '10.10.2.10', '192.168.172.0']
+
 
 
 # Application definition
