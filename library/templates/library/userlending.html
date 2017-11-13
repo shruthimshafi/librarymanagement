@@ -1,0 +1,29 @@
+{% extends "library/user.html" %} {% block title %} User Lend {% endblock %} 
+{% block content %}
+
+<div class="lending_area">
+    <table id="customers">
+        <tr>
+            <th>Serial No</th>
+            <th>Book Name </th>
+            <th>Requested User</th>
+            <th>Date</th>
+        </tr>
+        {% for items in lend %}
+        {% if request.user%}
+        <tr>
+            <td> {{ forloop.counter }}</td>
+                {% for books in items.books.all%}
+                    <td> {{books.title}}</td>
+                {% endfor %}
+                <td> {{items.user}}</td>
+                <td> {{items.req_date}}</td>
+        </tr>
+        {% endif %}
+        {%endfor%}
+
+    </table>
+
+</div>
+
+{% endblock %}

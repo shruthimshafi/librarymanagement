@@ -1,0 +1,45 @@
+{% extends "library/index.html" %} {% block title %} Book Information {% endblock %} {% block content %}
+
+<div class="content-area">
+
+    <div class="bookarea">
+        <div class="picture_area">
+            {% for pics in photos %}
+
+            <img class="books-images" src="{{pics.photos.url}}" height="378px" width="322px"> 
+            {%endfor%}
+        </div>
+        <div class="text_areas">
+            <table>
+                <tr>
+                    <td> Title: </td>
+                    <td> {{books.title}} </td>
+                </tr>
+                <tr>
+                    <td> Author: </td>
+                    {%for author in books.author.all%}
+                        <td> {{author.first_name}} {{author.last_name}} </td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    <td> Publication Date: </td>
+                    <td> {{books.publication_date}} </td>
+                </tr>
+                <tr>
+                    <td> Rating: </td>
+                    <td> {{books.rating}} </td>
+                </tr>
+                <tr>
+                    <td> Book Count: </td>
+                    <td> {{books.book_count}} </td>
+                </tr>
+                <tr>
+                    <td> Description: </td>
+                    <td> {{books.description}} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

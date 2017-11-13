@@ -1,0 +1,47 @@
+
+{% extends "library/base.html" %}
+{% load staticfiles %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'library/logins.css' %}" type="text/css" >
+{% endblock %}
+{% block title %} Login {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="areas">
+                <div class="heading-first">
+                    <br>
+                    <a class="p1" href="/login/">My Account</a>
+                </div>
+                <div class="heading-second">
+                    <br>
+                    <a class="p3" href="/signup/">Sign Up</a>
+                </div>
+                <div class="area-login">
+                    {% if form.errors %}
+                        <p class ="error">Sorry, that is not a valid username or password </p>
+                    {% endif %}
+
+                    <br>
+                    <form action="/auth_view/" method="post" >
+                        {% csrf_token %}
+
+                        {{form.as_p}}
+                  
+                    <br>
+                    <div class="terms">
+                        <p><input id="field_terms" type="checkbox" >
+                        <label for="field_terms">Remember Me?</label></p>     
+                    </div>
+                    <div class="login-area">
+                        <input class="button" value="LOGIN" type="submit">
+                    </div>
+                    <br>
+                        <div class="forgot-area">
+                            <p5>Forgot password?</p5>
+                        </div>
+                    </form> 
+                   
+                </div>
+        </div>
+    </div>
+{% endblock %}

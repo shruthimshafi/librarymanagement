@@ -1,0 +1,26 @@
+{% extends "library/base.html" %}
+{% load staticfiles %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'library/index.css' %}" type="text/css" >
+{% endblock %}
+{% block title %} Invalid Login {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="area">
+                <div class="heading-first">
+                    <a class="p1" href="/login/">My Account</a>
+                </div>
+                <div class="heading-second">
+                    <a class="p3" href="/signup/">Sign Up</a>
+                </div>
+
+                <div class="sub-body">
+                    <br>
+                    <br>
+                    <div class="logout_area">
+                        <h2> Sucessfully Logged Out!!!</h2> 
+                    </div>
+                </div>
+        </div>
+    </div>
+{% endblock %}

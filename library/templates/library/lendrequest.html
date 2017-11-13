@@ -1,0 +1,38 @@
+{% extends "library/index.html" %} {% block title %} lendrequest {% endblock %} {% block content %}
+<div class="lending_area">
+    <table id="customers">
+        <tr>
+            <th>Serial No</th>
+            <th>Book Name </th>
+            <th>Requested User</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Approved</th>
+        </tr>
+        {% for items in details %}
+        <tr>
+            <td> {{ forloop.counter }}</td>
+            {% for books in items.books.all%}
+            <td> {{books.title}}</td>
+            {% endfor %}
+            <td> {{items.user}}</td>
+            <td> {{items.req_date}}</td>
+            <td> {{items.req_status}}</td>
+            <td>
+                <form action="{% url 'approve_lend_request' items.id %}" method="post">
+                    {% csrf_token %}
+                    <button class='approve_button' type="submit">Approve</button>
+                </form>
+                <form action="{% url 'reject_lend' items.id %}" method="post">
+                    {% csrf_token %}
+                    <button class='reject_button' type="submit">Reject</button>
+                </form>
+            </td>
+        </tr>
+        {%endfor%}
+
+    </table>
+
+</div>
+
+{% endblock %}

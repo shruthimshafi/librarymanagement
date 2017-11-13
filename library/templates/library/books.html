@@ -1,0 +1,74 @@
+{% extends "library/index.html" %}
+{% block title %} Books {% endblock %}
+{% block content %}
+    <div class="create-book-area">
+        <form method="get" action="/createbook/">
+            <input class="button" value="Create Book" type="submit" >
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class = "content-area">
+
+        {% for items in books_info %}
+            <div class = "bookarea">
+                <div class ="picture-area">
+                    {% for pics in items.newphotos.all %}
+                            {% if forloop.first %}
+
+                                <a href="{% url 'book_details' items.id %}">
+                                    <img class="books-images" src="{{pics.photos.url}}" height="278px" width="222px" >
+                                </a>
+                           
+                            {% endif %}
+                    {%endfor%}
+                </div>
+                <div class ="format_new">
+                <table>
+                    <tr>
+                        <td> Title: </td>
+                        <td> {{items.title}} </td>
+                    </tr>
+                    <tr>
+                        <td> Author: </td>
+                        {%for author in items.author.all%}
+                            
+                            <td> {{author.first_name}} {{author.last_name}} </td>
+                        {%endfor%}
+                    </tr>
+                    <tr>
+                        <td> Publication Date: </td>
+                        <td> {{items.publication_date}} </td>
+                    </tr>
+                    <tr>
+                        <td> Rating: </td>
+                        <td> {{items.rating}} </td>
+                    </tr>
+                    <tr>
+                        <td> Book Count: </td>
+                        <td> {{items.book_count}} </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        {% endfor %}
+
+         <div class="page_title">
+            <div class="pagination">
+               <span class="step-links">
+               {% if books_info.has_previous %}
+                   <a href="?page={{ books_info.previous_page_number }}">previous</a>
+               {% endif %}
+
+               <span class="current">
+                     Page {{ books_info.number }} of {{ books_info.paginator.num_pages }}.
+               </span>
+
+               {% if books_info.has_next %}
+                     <a href="?page={{ books_info.next_page_number }}">next</a>
+               {% endif %}
+               </span>
+           </div>
+       </div>
+    </div>
+{% endblock %}

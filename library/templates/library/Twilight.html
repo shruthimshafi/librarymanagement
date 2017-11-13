@@ -1,0 +1,46 @@
+{% extends "library/index.html" %}
+{% block title %} Books {% endblock %}
+{% block content %}
+    <br>
+    <br>
+    <div class = "content-area">
+
+        {% for items in books_info %}
+            <div class = "bookarea">
+                <div class ="picture-area">
+                    {% for pics in items.newphotos.all %}
+                                <img class="books-images" src="{{pics.photos.url}}" class="thumbnail" height="278px" width="222px" id={{items.title}}>
+                    {% endfor%}
+                </div>
+                <div class ="format_new">
+                <table>
+                    <tr>
+                        <td> Title: </td>
+                        <td> {{items.title}} </td>
+                    </tr>
+                    <tr>
+                        <td> Author: </td>
+                        {%for author in items.author.all%}
+                            
+                            <td> {{author.first_name}} {{author.last_name}} </td>
+                        {%endfor%}
+                    </tr>
+                    <tr>
+                        <td> Publication Date: </td>
+                        <td> {{items.publication_date}} </td>
+                    </tr>
+                    <tr>
+                        <td> Rating: </td>
+                        <td> {{items.rating}} </td>
+                    </tr>
+                    <tr>
+                        <td> Book Count: </td>
+                        <td> {{items.book_count}} </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

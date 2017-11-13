@@ -1,0 +1,39 @@
+{% extends "library/base.html" %}
+{% load staticfiles %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'library/index.css' %}" type="text/css" >
+{% endblock %}
+{% block title %} Signup {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="area">
+                <div class="heading-first">
+                    <br>
+                    <a class="p1" href="/login/">My Account</a>
+                </div>
+                <div class="heading-second">
+                    <br>
+                    <a class="p3" href="/signup/">Sign Up</a>
+                </div>
+                <div class="sub-body">
+                    <form method="POST" action="/signup/" >
+                    {% csrf_token %}
+                    <br>
+                    <br>
+                    {{form.as_p }}
+                    <div class="terms">
+                        <p><input id="field_terms" type="checkbox">
+                            <label for="field_terms">Send me the latest news and updates</label></p>
+                        <p><input id="field_terms" type="checkbox" required name="terms">
+                            <label for="field_terms">I agree the terms and conditions</label></p>
+                    </div>
+                    <div class="login-area">
+                        <input class="button2" value="SIGN UP" type="submit">
+                        <input class="button1" value="CANCEL" type="reset">
+                    </div>
+                    </form> 
+                   
+                </div>
+        </div>
+    </div>
+{% endblock %}

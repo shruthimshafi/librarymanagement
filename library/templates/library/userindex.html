@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang='en'>
+
+</!--Header of the HTML file-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='UTF 8'>
+	{% load static %}
+    <link rel="stylesheet" href="{% static 'library/userindex.css' %}" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'library/index.js' %}"></script>  
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, post-check=0, pre-check=0" /> 
+    <meta http-equiv="Pragma" content="no-cache" />
+
+</head>
+
+<body>
+	<div class="main-body">
+	    <div class="topnav" id="myTopnav">
+		    <div class="main-body-width">
+                <a href="/userbooks/">Books</a>
+                <a href="/userlendrequest/">Lend Request</a>
+				<a href="/userRequestingDetails/">Return Request</a>
+            </div>
+
+            <div class="log_button">
+               <form method="get" action="/logout/">
+                    <input class="button_log" value="Logout" type="submit" >
+               </form>
+            </div>
+	    </div>
+        
+        <div class="main-body-width">
+        {% block content %}{% endblock %}
+        </div>
+       
+	</div>
+</body>

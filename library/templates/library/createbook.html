@@ -1,0 +1,26 @@
+
+{% extends "library/index.html" %}
+{% block title %} Create Book {% endblock %}
+{% block content %}
+    <div class="container">
+
+        <div class="box">
+            
+                <div class="create_book_area">
+                    <form method="POST" action="/createbook/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <br>
+                    <br>
+                    {{form.as_p}}
+                    <br>
+                    <p class="para"> Photo:  <input type="file" class="para_pic" name="photos" accept="image/*"> </p>
+                    <div class="login-area">
+                        <input class="button_create" value="Submit" type="submit">
+                        <input class="button1_create" value="Cancel" type="reset">
+                    </div>
+                    </form> 
+                   
+                </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "library/index.html" %} {% block title %} Author {% endblock %} {% block content %}
+<div class="create-book-area">
+    <form method="get" action="/addauthor/">
+        <input class="button" value="Add Author" type="submit">
+    </form>
+</div>
+<div class="content-area">
+    {% for authors in authors_list %}
+    <div class="content">
+        <div class="picture-area">
+            <img class="author-images" src="{{ authors.author_photo.url}}" height="278px" width="222px">
+        </div>
+        <div class="format">
+            <table>
+                <tr>
+                    <td> Name: </td>
+                    <td> {{authors.first_name}} </td>
+                    <td> {{authors.last_name}} </td>
+                </tr>
+                <tr>
+                    <td> Age: </td>
+                    <td> {{authors.age}} </td>
+                </tr>
+                <tr>
+                    <td> Birth Place: </td>
+                    <td> {{authors.place_of_birth}} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="page_title">
+        <div class="pagination">
+            <span class="step-links">
+               {% if authors_list.has_previous %}
+                   <a href="?page={{ authors_list.previous_page_number }}">previous</a>
+               {% endif %}
+
+               <span class="current">
+                     Page {{ authors_list.number }} of {{ authors_list.paginator.num_pages }}.
+               </span> {% if authors_list.has_next %}
+            <a href="?page={{ authors_list.next_page_number }}">next</a> {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+{% endblock %}

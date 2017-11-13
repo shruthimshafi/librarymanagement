@@ -1,0 +1,20 @@
+.create-book-area{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    border:1px solid red;
+
+}
+
+.button {
+    background-color: red;
+    border: 1px solid  #FF7F27;
+    color: white;
+    height: 34px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-left: 31px;
+    padding: 0px 0px 0px 0px;
+    font-size:14px;
+}
