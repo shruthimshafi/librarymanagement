@@ -1,0 +1,698 @@
+ul{
+    display:none;
+    
+}
+.main-body{
+    width: 100%;
+    height:1500px;
+    background: url('images/library1.jpg');
+	opacity:1.85;
+	border:1px solid blue;
+    color: white;
+    background-size: cover
+}
+.main-body-login{
+    width: 100%;
+    height:1000px;
+    background: url('images/library3.jpg') no-repeat;
+    opacity:0.85;
+    border:1px solid blue;
+    color: white;
+
+}
+tr {
+    height: 1px;
+}
+td {
+
+    height: 100%;
+}
+
+.area{
+    width: 722px;
+    height:549px;
+    opacity:0.85;
+    color: white;
+    padding:0px 0px 0px 0px;
+    margin:165px 0px 0px 291px;
+    opacity: 1.5;
+    background: grey;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 50px 50px 20px black;
+    
+
+}
+
+
+.create-book-area{
+    padding:0px 0px 0px 0px;
+    margin:46px 0px 0px 850px;
+
+}
+
+.main-body-width{
+	margin: 0 auto;
+	width: 960px;	
+}
+.footer-area{
+    padding-bottom: 0px;
+    border:2px solid blue;
+}
+.topnav {
+    overflow: hidden;
+    width: 99%;
+    height: 89px;
+    padding-top: 20px;
+	padding-left:100px;
+    background: grey;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 24px 110px 0px 28px;
+    font-size: 18px;
+    text-align: right;
+    opacity:1;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: yellow;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: :#87a310;
+    ;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button {
+    background-color: #FF7F27;
+    border: 1px solid  #FF7F27;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -3px;
+    margin-left: -49px;
+    padding: 0px 0px 0px 0px;
+    font-size:14px;
+    border-radius: 12px;
+}
+.button_create {
+    background-color: #FF7F27;
+    border: 1px solid  #FF7F27;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 29px;
+    margin-left: -23px;
+    padding: 0px 0px 0px 0px;
+    font-size:14px;
+    border-radius: 12px;
+}
+
+.button2 {
+    background-color: #FF7F27;
+    border: 1px solid  #FF7F27;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -11px;
+    margin-left: 188px;
+    padding: 0px 0px 0px 0px;
+    font-size:14px;
+    border-radius: 12px;
+}
+.main-area{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+.content-area{
+    padding:0px 0px 0px 0px;
+    margin:60px 0px 0px 0px;
+    height:900px;
+    width:943px;
+    float:left;
+    margin-right: 1%; 
+    margin-bottom: 0.5em;
+} 
+.picture-area{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+
+    height:278px;
+    width:222px;
+    float:left;
+    margin-right: 1%; 
+    margin-bottom: 0.5em;
+
+}
+.picture_area{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:278px;
+    width:800px;
+    float:left;
+    margin-right: 2%; 
+    margin-bottom: 0.5em;
+
+}
+.new-picture-area{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:578px;
+    width:222px;
+    float:left;
+    margin-right: 1%; 
+    margin-bottom: 0.5em
+}
+
+.logout_area{
+    padding:77px 0px 0px 250px;
+    margin:0px 0px 0px 0px;
+
+}
+.heading-first{
+    width:53%;
+    height:75px;
+    padding:8px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    float:left;
+    background-color: grey;
+    text-align: center;
+    font-size: 20px;
+    border: 0.5px solid black;
+    opacity: 0.5;
+}
+.heading-second{
+    width:336px;
+    height:83px;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 384px;
+    background-color: grey;
+    text-align: center;
+    font-size: 20px;
+    border: 0.5px solid black;
+    opacity: 0.5
+}
+.heading-third{
+    width:100%;
+    height:32px;
+    padding:15px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    background-color: #418FBF;
+    text-align: center;
+    font-size: 20px;
+}
+.para{
+    padding:0px 0px 0px 0px;
+    margin:-1px 0px 0px -50px;
+}
+.para_pic{
+    padding:0px 0px 0px 18px;
+    margin:0px 0px 0px 0px;
+}
+
+.format{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:100px;
+    width:222px;
+    float:left;
+    background-color: white;
+    opacity:0.8;
+    color:black;
+}
+
+.text_areas{
+    padding:0px 0px 0px 0px;
+    margin:111px 0px 0px 0px;
+    height:400px;
+    width:664px;
+    float:left;
+    background-color: white;
+    opacity:0.8;
+    color:black;
+
+}
+
+.lending_area{
+    padding:0px 0px 0px 0px;
+    margin:105px 0px 0px 0px;
+    height:388px;
+    width:900px;
+   
+}
+
+.lending_table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: black;
+    background-color: #f2f2f2;
+}
+
+#customers th {
+    padding-top: 25px;
+    padding-bottom: 31px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+.format_new{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:190px;
+    width:222px;
+    float:left;
+    background: white;
+    opacity:0.8;
+    color:black;
+}
+
+.new{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:190px;
+    width:222px;
+    float:left;
+    background: grey;
+    opacity:0.8;
+    color:black;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.format_book{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:200px;
+    width:222px;
+    float:left;
+    background-color: white;
+    color:black;
+}
+.bookarea{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:477px;
+    width:222px;
+    float:left;
+    margin-right: 1%;
+    margin-bottom: 0.5em;
+}
+
+.content{
+
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:394px;
+    width:222px;
+    float:left;
+    margin-right: 1%; 
+    margin-bottom: 0.5em;
+}
+
+.text-area{
+
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    height:100px;
+    width:222px;
+    float:left;
+    background-color: white;
+    opacity:0.5;
+    margin-right: 1%; 
+    margin-bottom: 0.5em;
+}
+.button1 {
+    background-color: #ED1C24;
+    border: 1px solid  #ED1C24;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    float:right;
+    font-size:14px;
+    border-radius: 12px;
+    margin-top: -11px;
+    margin-right: 245px;
+}
+
+.approve_button{
+    background-color: black;
+    border: 1px solid  grey;
+    color: white;
+    height: 31px;
+    width: 113px;
+    text-align: center;
+    cursor: pointer;
+    font-size:15px;
+    border-radius: 17px;
+
+}
+
+.reject_button{
+    background-color: grey;
+    border: 1px solid  black;
+    color: white;
+    height: 26px;
+    width: 115px;
+    text-align: center;
+    cursor: pointer;
+    font-size:14px;
+    border-radius: 12px;
+    margin-top: 11px;
+
+}
+
+.button1_create {
+    background-color: #ED1C24;
+    border: 1px solid  #ED1C24;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    float:right;
+    font-size:14px;
+    border-radius: 12px;
+    margin-top: 29px;
+    margin-right: 245px;
+}
+.button1_add {
+    background-color: #ED1C24;
+    border: 1px solid  #ED1C24;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    float:right;
+    font-size:14px;
+    border-radius: 12px;
+    margin-top: 29px;
+    margin-right: 175px;
+}
+.button_log{
+    background-color: black;
+    border: 5px solid  #ED1C24;
+    color: white;
+    height: 48px;
+    width: 127px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    float:right;
+    font-size:14px;
+    border-radius: 12px;
+    margin-top: -34px;
+    margin-right: 218px;
+}
+.page_title{
+    padding:22px 0px 0px 90px;
+    margin:977px 0px 0px 513px;
+    height:46px;
+    width:426px;
+    background: grey;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.create_book_area{
+    padding:0px 0px 0px 232px;
+    margin:88px 0px 0px 75px;
+    height:700px;
+    width:510px;
+    opacity: 1.5;
+    background: grey;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 50px 50px 20px black;
+
+}
+.sub-body-login{
+    padding:0px 0px 0px 0px;
+    margin:35px 0px 0px 260px;
+    height:394px;
+    width:222px;
+    border:1 px solid red;
+}
+
+#id_password1{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:20px;
+    width:204px; 
+    border-radius: 5.5px;
+}
+
+#id_password2{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:20px;
+    width:204px; 
+    border-radius: 5.5px;
+}
+
+#id_username{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:20px;
+    width:204px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_username"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px 176px; 
+}
+
+label[for="id_password2"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px 93px; 
+}
+
+label[for="id_password1"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px 179px; 
+}
+
+
+.helptext{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px; 
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color:transparent;
+}
+.terms{
+
+    padding: 0px 0px 0px 18px;
+    margin:-16px 0px 0px 154px;
+}
+
+#id_title{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 0px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+.area_addauthor{
+    padding:19px 0px 0px 132px;
+    margin:140px 0px 0px 200px;
+    height:450px;
+    width:450px; 
+
+    opacity: 1.5;
+    background: grey;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 50px 50px 20px black;
+
+}
+
+label[for="id_title"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -33px; 
+}
+#id_author{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:91px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_author"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -56px; 
+}
+
+#id_publication_date{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_publication_date"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -116px; 
+}
+#id_description{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:180px;
+    width:274px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_description"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -86px; 
+}
+#id_rating{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_rating"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -56px; 
+}
+#id_book_count{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_book_count"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -83px; 
+}
+
+#id_book_count{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_first_name"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -83px; 
+}
+
+#id_first_name{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 30px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_last_name"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -83px; 
+}
+
+#id_last_name{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 32px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_age"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -83px; 
+}
+
+#id_age{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 70px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_place_of_birth"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -83px; 
+}
+#id_place_of_birth{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+label[for="id_author_photo"]{
+   padding:0px 0px 0px 0px;
+   margin:5px 0px 0px -83px; 
+}
+#id_author_photo{
+    padding:0px 0px 0px 0px;
+    margin:5px 0px 0px 10px;
+    height:27px;
+    width:273px; 
+    border-radius: 5.5px;
+}
+
+.p1{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: normal;
+    text-shadow: 2px 2px white;
+    font-weight: bold;
+}
+.p3{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: normal;
+    text-shadow: 2px 2px white;
+    font-weight: bold;
+}
+

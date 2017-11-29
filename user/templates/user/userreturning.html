@@ -1,0 +1,37 @@
+
+{% extends "library/user.html" %} {% block title %} User Return {% endblock %} 
+{% block content %}
+<div class="lending_area">
+    <table id="customers">
+        <tr>
+            <th>Serial No</th>
+            <th>Book Name </th>
+            <th>Requested User</th>
+            <th>Date</th>
+            <th>Review</th>
+        </tr>
+        {% for items in returning %}
+        {% if request.user.id %}
+        <tr>
+            <td> {{ forloop.counter }}</td>
+                {% for books in items.books.all%}
+                    <td> {{books.title}}</td>
+                {% endfor %}
+                <td> {{items.user}}</td>
+                <td> {{items.date}}</td>
+                <td>  {% for books in items.books.all%}
+                    <form action = "{% url 'user_review' books.id %}" method="post">
+                     {% endfor %}
+                     {% csrf_token %}
+                        <button class = 'reject_button' type="submit">Submit Review</button>
+                    </form>
+                </td>
+        </tr>
+        {% endif %}
+        {%endfor%}
+
+    </table>
+
+</div>
+
+{% endblock %}

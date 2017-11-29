@@ -1,0 +1,206 @@
+body {
+    background: url('images/library5.jpg');
+    font-family: Open Sans;
+}
+
+.container {
+    width: 960px;
+    height: 960px;
+    margin: auto;
+}
+
+.box{
+    width:500px;
+    height:380px;
+    padding:0px 0px 0px 0px;
+    margin:280px 0px 0px 200px;
+}
+
+.heading{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    color:black;
+}
+
+.heading-first{
+    width:53%;
+    height:32px;
+    padding:8px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    float:left;
+    background-color: black;
+    opacity:0.5;
+}
+.heading-second{
+    width:282px;
+    height:32px;
+    padding:8px 0px 0px 0px;
+    margin:0px 0px 0px 218px;
+     background-color: black;
+    opacity:0.5;
+}
+.p1{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 76px;  
+    text-decoration: none;
+}
+.p3{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 76px;
+    text-decoration: none;
+}
+.heading-third{
+    width:100%;
+    height:32px;
+    padding:15px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    background-color: black;
+    opacity:0.5;
+}
+p2{
+   font-size: 13px;
+    text-align: center;
+    padding:0px 0px 0px 78px;
+    margin:0px 0px 0px 0px;
+    color: white;
+}
+
+.email-area{
+    padding:0px 0px 0px 18px;
+    margin:0px 0px 0px 0px;
+    width:96%;
+    height:51px;
+    opacity:0.9;
+}
+
+.format{
+    height:45px;
+    width:68%;
+
+    color: black;
+}
+.terms{
+    color: #D1D4DA;
+    padding: 0px 0px 0px 18px;
+    margin:-16px 0px 0px 0px;
+    font-size: 13px;
+}
+
+.sub-body{
+    padding:0px 0px 0px 0px;
+    margin:13px 0px 0px 0px;
+    width:100%;
+    height:236px;
+}
+.password-area{
+    padding:0px 0px 0px 18px;
+    margin:0px 0px 0px 0px;
+    width:96%;
+    height:51px;
+    opacity:0.9;
+}
+
+.login-area{
+    width:100px;
+    height:100
+}
+.button {
+    background-color: black;
+    color: white;
+    height: 34px;
+    width: 85px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 20px;
+    padding: 0px 0px 0px 0px;
+    font-size:14px;
+    opacity:0.5;
+}
+p5{
+    font-size: 13px;
+    text-align: center;
+    color: #D1D4DA;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+.forgot-area{
+    width:130px;
+    height:28px;
+    padding:7px 0px 0px 0px;
+    margin:-94px 0px 0px 363px;
+}
+.bottom1{
+    width:153px;
+    height:27px;
+    background-color: black;
+    float:left;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+.bottom2{
+    width:52px;
+    height:37px;
+    float:left;
+    background-color:#325597;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+.bottom3{
+    width:122px;
+    height:27px;
+    float:left;
+    background-color: #2C4982;
+    color: white;
+    padding: 10px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+.bottom4{
+    width:52px;
+    height:37px;
+    float:left;
+    background-color:#55ACEF;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+.bottom5{
+    width:121px;
+    height:27px;
+    float:left;
+    background-color:#4B9AD4 ;
+    color: white;
+    padding: 10px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+#facebook{
+    width:23px;
+    height:21px;
+    padding:6px 0px 0px 11px;
+    margin:0px 0px 0px 0px;
+}
+
+p6{
+    font-size: 13px;
+    color: white;
+    padding:0px 0px 0px 14px;
+    margin:0px 0px 0px 0px;
+}
+input[type=email]::placeholder,input[type=password]::placeholder {
+    color:#D1D4DA;
+    font-size:13px;
+}
+
+

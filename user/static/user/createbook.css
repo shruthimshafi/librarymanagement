@@ -1,0 +1,115 @@
+body {
+    background: url('images/library5.jpg') no-repeat;
+    font-family: Open Sans;
+}
+
+.container {
+    width: 960px;
+    height: 800px;
+    margin: auto;
+}
+
+.box{
+    width:500px;
+    height:380px;
+    padding:0px 0px 0px 0px;
+    margin:280px 0px 0px 200px;
+}
+
+
+.format{
+    height:45px;
+    width:92%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: darkgray;
+    color: black;
+    opacity:1;
+}
+
+.sub-body{
+    padding:0px 0px 0px 0px;
+    margin:-44px 0px 0px 0px;
+    width:100%;
+    height:236px;
+}
+
+
+input[type=text]::placeholder,input[type=email]::placeholder {
+    color:black;
+    font-size:13px;
+}
+
+.name-area{
+    padding:0px 0px 0px 18px;
+    margin:0px 0px 0px 0px;
+    width:96%;
+    height:51px;
+}
+
+.description-area{
+    padding:0px 0px 0px 18px;
+    margin:0px 0px 0px 0px;
+    width:96%;
+    height:51px;
+}
+
+.photo-area{
+    padding:0px 0px 0px 18px;
+    margin:0px 0px 0px 0px;
+    width:96%;
+    height:51px;
+}
+
+.format{
+    height:45px;
+    width:92%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: darkgray;
+    color: black;
+}
+.terms{
+    color: #D1D4DA;
+    padding: 0px 0px 0px 18px;
+    margin:-16px 0px 0px 0px;
+    font-size: 13px;
+}
+
+.para_pic{
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+
+}
+
+
+
+.button {
+    background-color: #FF7F27;
+    border: 1px solid  #FF7F27;
+    color: white;
+    height: 34px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-left: 298px;
+    padding: 0px 0px 0px 0px;
+    font-size:14px;
+    opacity: 1;
+}
+.button1 {
+    background-color: #ED1C24;
+    border: 1px solid  #ED1C24;
+    color: white;
+    height: 34px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 7px;
+    padding: 2px 0px 0px 0px;
+    float:right;
+    font-size:14px;
+}

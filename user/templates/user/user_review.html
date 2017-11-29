@@ -1,0 +1,16 @@
+
+{% extends "library/user.html" %} {% block title %} User Return {% endblock %} 
+{% block content %}
+<div class="lending_area">
+
+    {% if request.user.id %} 
+        <form action = "{% url 'user_write_review' book_id %}" method="post">
+        {% csrf_token %}
+        <textarea name="review_content" ></textarea>
+            <button class = 'reject_button' type="submit">Submit </button>
+        </form>
+    {% endif %}
+
+</div>
+
+{% endblock %}

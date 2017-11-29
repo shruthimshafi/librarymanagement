@@ -117,6 +117,8 @@ class AdminBook(View):
         args['form'] = AuthorForm()
         return render(request, 'library/addauthor.html',args)
 
+        
+
     @user_passes_test(lambda u: u.is_superuser)
     @login_required(login_url='/login/')    
     def lendrequest(request):

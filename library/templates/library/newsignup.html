@@ -9,14 +9,14 @@
         <div class="area">
                 <div class="heading-first">
                     <br>
-                    <a class="p1" href="#"  >My Account</a>
+                    <a class="p1" href="{% url 'login_new' %}"  >My Account</a>
                 </div>
                 <div class="heading-second">
                     <br>
-                    <a class="p3" href="{% url 'signup' %}" >Sign Up</a>
+                    <a class="p3" href="{% url 'signup_new' %}" >Sign Up</a>
                 </div>
                 <div class="sub-body">
-                    <form method="POST" action="/signup/" >
+                    <form method="POST" action="{% url 'signup_new' %}" >
                     {% csrf_token %}
                     <br>
                     <br>

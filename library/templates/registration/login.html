@@ -10,16 +10,17 @@
         <div class="areas">
                 <div class="heading-first">
                     <br>
-                    <a class="p1" href="/login/">My Account</a>
+                    <a class="p1" href="{% url 'login_new' %}">My Account</a>
                 </div>
                 <div class="heading-second">
                     <br>
-                    <a class="p3" href="/signup/">Sign Up</a>
+                    <a class="p3" href="{% url 'signup_new' %}">Sign Up</a>
                 </div>
                 <div class="area-login">
                     {% if form.errors %}
                         <p class ="error">Sorry, that is not a valid username or password </p>
                     {% endif %}
+                    
 
                     <br>
                     <form action="/auth_view/" method="post" >

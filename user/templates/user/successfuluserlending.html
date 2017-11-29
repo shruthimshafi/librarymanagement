@@ -1,0 +1,31 @@
+{% extends "library/user.html" %} {% block title %} User Sucessfully Lend {% endblock %} 
+{% block content %}
+<div class="lending_area">
+    <table id="customers">
+        <h2> Sucessfully Returned your Book!!!!</h2>
+        <tr>
+            <th>Serial No</th>
+            <th>Book Name </th>
+            <th>Requested User</th>
+            <th>Date</th>
+        </tr>
+        {% for items in lend %}
+        {% if request.user %}
+        {% if user.is_authenticated %}
+        <tr>
+            <td> {{ forloop.counter }}</td>
+                {% for books in items.books.all%}
+                    <td> {{books.title}}</td>
+                {% endfor %}
+                <td> {{items.user}}</td>
+                <td> {{items.req_date}}</td>
+        </tr>
+        {% endif %}
+        {% endif %}
+        {%endfor%}
+
+    </table>
+
+</div>
+
+{% endblock %}
